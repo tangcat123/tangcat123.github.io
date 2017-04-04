@@ -7,7 +7,7 @@
 
 <html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -147,7 +147,7 @@
 
 
 
-  <title> MonsterTang </title>
+  <title> MonsterTang </title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -158,7 +158,7 @@
 
 
 
-  <script type="text/javascript">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><script type="text/javascript">
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
@@ -437,12 +437,12 @@
 </li>
 <li><p>exponential fog</p>
 <blockquote>
-<p>指数衰减（越往前模糊的越快）<em>more physical based</em><br>d:distance b:衰减系数<br>$$f=e^{-(d*b)}$$</p>
+<p>指数衰减（越往前模糊的越快）<em>more physical based</em><br>d:distance b:衰减系数.<br>$$f=e^{-(d*b)}$$</p>
 <p>变种<br>$$f=e^{-(d*b)^2}$$</p>
-</blockquote>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span><span class="params">()</span></span></div><div class="line">	<span class="keyword">return</span> <span class="number">123</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure></blockquote>
 </li>
 </ul>
-<figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span><span class="params">()</span></span></div><div class="line">	<span class="keyword">return</span> <span class="number">123</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+
           
         
       
@@ -878,7 +878,24 @@
         }
       });
     </script>
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
   
 
 
