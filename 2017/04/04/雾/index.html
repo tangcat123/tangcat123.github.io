@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="stand fog equations  linear fog 从近到远的一个线性插值$$f = \frac {fogEnd - vertexViewDistance}{fogEnd-fogStart}$$   exponential fog 指数衰减（越往前模糊的越快）more physical basedd:distance b:衰减系数$$f=e^{-(db)}$$变种：$$f=e^{-(d">
+<meta name="description" content="stand fog equations  linear fog 从近到远的一个线性插值$$f = \frac {fogEnd - vertexViewDistance}{fogEnd-fogStart}$$   exponential fog  指数衰减（越往前模糊的越快）more physical basedd:distance b:衰减系数$$f=e^{-(d*b)}$$ 变种$$f=e^{-">
 <meta name="keywords">
 <meta property="og:type" content="article">
 <meta property="og:title" content="雾">
 <meta property="og:url" content="http://yoursite.com/2017/04/04/雾/index.html">
 <meta property="og:site_name" content="MonsterTang">
-<meta property="og:description" content="stand fog equations  linear fog 从近到远的一个线性插值$$f = \frac {fogEnd - vertexViewDistance}{fogEnd-fogStart}$$   exponential fog 指数衰减（越往前模糊的越快）more physical basedd:distance b:衰减系数$$f=e^{-(db)}$$变种：$$f=e^{-(d">
-<meta property="og:updated_time" content="2017-04-04T13:12:10.946Z">
+<meta property="og:description" content="stand fog equations  linear fog 从近到远的一个线性插值$$f = \frac {fogEnd - vertexViewDistance}{fogEnd-fogStart}$$   exponential fog  指数衰减（越往前模糊的越快）more physical basedd:distance b:衰减系数$$f=e^{-(d*b)}$$ 变种$$f=e^{-">
+<meta property="og:updated_time" content="2017-04-04T13:24:09.779Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="雾">
-<meta name="twitter:description" content="stand fog equations  linear fog 从近到远的一个线性插值$$f = \frac {fogEnd - vertexViewDistance}{fogEnd-fogStart}$$   exponential fog 指数衰减（越往前模糊的越快）more physical basedd:distance b:衰减系数$$f=e^{-(db)}$$变种：$$f=e^{-(d">
+<meta name="twitter:description" content="stand fog equations  linear fog 从近到远的一个线性插值$$f = \frac {fogEnd - vertexViewDistance}{fogEnd-fogStart}$$   exponential fog  指数衰减（越往前模糊的越快）more physical basedd:distance b:衰减系数$$f=e^{-(d*b)}$$ 变种$$f=e^{-">
 
 
 
@@ -105,8 +105,8 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    scheme: 'Mist',
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -142,6 +142,16 @@
 
 
 
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ca1e075841d8f98530931a1676fc4f64";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
 
 
 
@@ -156,7 +166,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail ">
+  <div class="container sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -202,6 +212,26 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -218,6 +248,16 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-something">
+          <a href="/something" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            something
           </a>
         </li>
       
@@ -255,7 +295,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="MonsterTang">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="http://img.8kmm.com/2016/1/201601262216218097.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -328,8 +368,10 @@
 <p>从近到远的一个线性插值<br>$$f = \frac {fogEnd - vertexViewDistance}{fogEnd-fogStart}$$</p>
 </blockquote>
 </li>
-<li>exponential fog<blockquote>
-<p>指数衰减（越往前模糊的越快）<em>more physical based</em><br>d:distance b:衰减系数<br>$$f=e^{-(d<em>b)}$$<br>变种：<br>$$f=e^{-(d</em>b)^2}$$</p>
+<li><p>exponential fog</p>
+<blockquote>
+<p>指数衰减（越往前模糊的越快）<em>more physical based</em><br>d:distance b:衰减系数<br>$$f=e^{-(d*b)}$$</p>
+<p>变种<br>$$f=e^{-(d*b)^2}$$</p>
 </blockquote>
 </li>
 </ul>
@@ -365,22 +407,6 @@
         
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/04/04/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
       
 
       
@@ -428,7 +454,7 @@
       <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
+               src="http://img.8kmm.com/2016/1/201601262216218097.jpg"
                alt="MonsterTang" />
           <p class="site-author-name" itemprop="name">MonsterTang</p>
            
@@ -440,7 +466,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -501,7 +527,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
+    NexT.Mist
   </a>
 </div>
 
